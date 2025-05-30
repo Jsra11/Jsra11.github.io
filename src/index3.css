@@ -1,0 +1,279 @@
+/*@import "tailwindcss";
+
+/* src/index.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+h2 {
+  color: #444;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f8f9fa; /* Fondo gris claro */
+  padding: 1rem 2rem; /* Espaciado interno */
+  display: flex; /* Distribución horizontal */
+  justify-content: space-between; /* Alineación entre elementos */
+  align-items: center; /* Alineación vertical */
+  border-bottom: 1px solid #dee2e6; /* Línea divisoria inferior */
+}
+
+/* Logo */
+.navbar .logo {
+  max-width: 150px; /* Ancho máximo del logo */
+  height: auto; /* Ajusta la altura proporcionalmente */
+}
+
+/* Información de contacto */
+
+.navbar .contact-info {
+  display: flex; /* Distribución horizontal */
+  align-items: center; /* Alineación vertical */
+  margin-right: 2rem; /* Margen derecho para separar del menú */
+  gap: 1rem; /* Espacio entre los elementos <p> */
+}
+
+.navbar .contact-info p {
+  margin: 0.5rem 0; /* Margen vertical entre los elementos */
+}
+
+.navbar .contact-info a {
+  color: #495057; /* Color del texto */
+  text-decoration: none; /* Quita el subrayado */
+}
+
+/* Botón de llamada y cotización */
+.navbar .call-to-action {
+  margin-right: 2rem; /* Margen derecho para separar del menú */
+}
+
+.navbar .call-to-action button {
+  background-color: #007bff; /* Color azul */
+  color: white; /* Color del texto */
+  border: none; /* Sin bordes */
+  padding: 0.8rem 1.5rem; /* Tamaño del botón */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de mano al pasar el ratón */
+  transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.navbar .call-to-action button:hover {
+  background-color: #0062cc; /* Color azul más oscuro al pasar el ratón */
+}
+
+/* Menú */
+.navbar .menu {
+  display: flex; /* Distribución horizontal */
+  gap: 1.5rem; /* Espacio entre los enlaces */
+}
+
+.navbar .menu a {
+  color: #495057; /* Color del texto */
+  text-decoration: none; /* Quita el subrayado */
+  transition: color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.navbar .logo {
+  max-width: 50px; /* Ancho máximo del logo */
+  height: auto; /* Ajusta la altura proporcionalmente */
+}
+
+.navbar .menu a:hover {
+  color: #007bff; /* Color azul al pasar el ratón */
+}
+
+/* Responsividad (opcional) */
+@media (max-width: 768px) {
+  /* Ocultar la información de contacto y el botón de llamada en dispositivos pequeños */
+  .navbar .contact-info,
+  .navbar .call-to-action {
+    display: none;
+  }
+
+  /* Centrar el menú */
+  .navbar .menu {
+    justify-content: center;
+  }
+}
+/* src/index.css */
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  /*color: white;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+}
+
+.hero p {
+  font-size: 1.5rem;
+
+}
+
+/* src/index.css */
+.servicios-lista {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.servicios-lista li {
+  background: #f4f4f4;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 5px;
+  max-width: 600px;
+}
+
+/* testimonio */
+
+.Proyectos {
+  background-color: #141414;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.Proyectos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.cliente {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.articulo {
+  background: white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.articulo:hover {
+  transform: translateY(-10px);
+}
+
+.articulo h3 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.articulo p {
+  color: #555;
+  font-style: italic;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  /*margin-bottom: 0px;
+  border: 3px solid #007bff;*/
+}
+
+/* contacto */
+
+.contacto {
+  background-color: #f2f2f2;
+  padding: 60px 20px;
+}
+
+.contacto-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.info-contacto {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contacto h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+}
+
+.info-item {
+  margin-bottom: 20px;
+}
+
+.info-item h3 {
+  font-size: 18px;
+  color: #007bff;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.formulario {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.formulario button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+  background-color: #0056b3;
+}
